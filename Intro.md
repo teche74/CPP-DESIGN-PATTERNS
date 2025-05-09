@@ -24,6 +24,8 @@ Design patterns can be classified based on three factors:
 2. **Level of Detail**  
 3. **Scale of Applicability**
 
+<img src = "images/design_pattern.png">
+
 > **Complexity** refers to the number of working parts involved in a pattern. For example, code with many modules and function calls is considered more complex than code with fewer components.
 
 > **Level of Detail** defines the design depth of the pattern. It includes both low-level (code structure) and high-level (module interaction) perspectives.
