@@ -113,7 +113,8 @@ int main(){
 
 
     s2->GetDetails();
-
+    
+    delete s2;  // free up the memory allocated.
     
     return 0;
 }
