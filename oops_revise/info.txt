@@ -1,0 +1,1 @@
+revising concept of oops in cpp to apply patterns effectively.
