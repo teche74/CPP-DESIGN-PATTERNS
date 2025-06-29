@@ -1,0 +1,59 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+class Base{
+    private:
+    int pri_val;
+
+    protected:
+    int pro_val;
+    
+    public:
+    int pub_val;
+
+    Base(int x, int y , int z){
+        this->pub_val = x;
+        this->pri_val = y;
+        this->pro_val = z;
+    }
+    
+    int GetPrivate(){
+        return this->pri_val;
+    }
+
+    void SetPrivate(int val){
+        this->pri_val = val;
+    }
+
+    void SetProtected(int val){
+        this->pro_val = val;
+    }
+
+    int GetProtected(){
+        return pro_val;
+    }
+};
+
+class Derived1 : public Base{
+    // when inherited only public and (protected of Direct Parent (only accessed direclty inside class)) can be accessed , private member can be accessed via getter/setter only;  
+    public:
+
+    Derived1(int x , int y, int z) : Base(x,y,z) {};
+
+};
+
+
+class Derived2 : public Base{
+    public:
+    Derived2(int x, int y , int z) : Base(x,y,z){};
+};
+
+int main(){
+    Derived2 * dv1 = new Derived2(1,2,3);
+    Derived1 * dv2 = new Derived1(4,5,6);
+    // public value and protected value can be directly accessed;
+    cout<<dv1->GetPrivate()<<endl;
+    cout<<dv2->GetPrivate()<<endl;
+    return 0;
+}
