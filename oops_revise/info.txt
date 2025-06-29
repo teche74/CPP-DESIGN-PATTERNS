@@ -1,4 +1,0 @@
-revising concept of oops in cpp to apply patterns effectively.
-
-
-to quickly revise concept you can take help : https://excalidraw.com/#json=yVJMcaKeUOXmMCKfttyC0,ApTCjaB5S6tEZ9YIPkh-Tw
